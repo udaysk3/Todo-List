@@ -89,7 +89,7 @@ function delCheck(e)
     if(e.target.classList.contains('delbtn'))
     {   const todo = e.target.parentElement;
         todo.classList.add('gone');
-        removelocaltodos(todo);
+       
         todo.addEventListener('transitionend',function()
         {
             todo.remove();
